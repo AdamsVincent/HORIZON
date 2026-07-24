@@ -28,7 +28,13 @@
     <a href="#faq">FAQ</a>
   </nav>
 
-  <a class="button button-small" href="#contact">Échangeons</a>
+  <div class="header-actions">
+    <button class="sound-toggle" id="soundToggle" type="button" aria-pressed="false">
+      <span class="sound-icon" aria-hidden="true">🎵</span>
+      <span class="sound-label">Entrer dans l’ambiance HORIZON</span>
+    </button>
+    <a class="button button-small" href="#contact">Échangeons</a>
+  </div>
 </header>
 
 <main>
@@ -269,14 +275,26 @@
 <footer class="footer">
   <img src="assets/horizon.svg" alt="HORIZON">
   <p>Une expérience Adams Partners dédiée aux dirigeants indépendants de la seconde main.</p>
-  <p>
-  © <span id="year"></span> Adams Partners – Tous droits réservés.<br><br>
-
-  <a href="mentions-legales.html">Mentions légales</a>
-  &nbsp;|&nbsp;
-  <a href="politique-confidentialite.html">Politique de confidentialité</a>
-</p>
+  <p>© <span id="year"></span> Adams Partners — Tous droits réservés.</p>
+  <p class="footer-legal"><a href="mentions-legales.html">Mentions légales</a><span aria-hidden="true">|</span><a href="politique-confidentialite.html">Politique de confidentialité</a></p>
 </footer>
+
+<audio id="horizonAudio" preload="metadata" loop>
+  <source src="assets/audio/sb_lifeinsilico.mp3" type="audio/mpeg">
+</audio>
+
+<div class="horizon-welcome is-visible" id="horizonWelcome" aria-hidden="false" role="dialog" aria-modal="true" aria-labelledby="welcomeTitle">
+  <div class="welcome-panel">
+    <img src="assets/horizon.svg" alt="HORIZON">
+    <h2 id="welcomeTitle">Bienvenue dans l’univers HORIZON</h2>
+    <p>Prenez quelques instants pour découvrir une nouvelle façon d’accompagner votre entreprise.</p>
+    <div class="welcome-experience">
+      <button class="welcome-sound-button" id="welcomeSoundOn" type="button">✨ Découvrir HORIZON en musique</button>
+      <small>Une expérience immersive de quelques minutes.</small>
+    </div>
+    <button class="welcome-skip-button" id="welcomeSoundOff" type="button">Continuer sans musique</button>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
