@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1360 250" role="img" aria-labelledby="title desc">
+<title id="title">HORIZON</title>
+<desc id="desc">Logo HORIZON avec un soleil doré parfaitement centré entre le H et le R.</desc>
+<defs>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#b7791f"/>
+    <stop offset=".5" stop-color="#f2cc73"/>
+    <stop offset="1" stop-color="#c68c2b"/>
+  </linearGradient>
+  <linearGradient id="white" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffffff"/>
+    <stop offset="1" stop-color="#d7dee8"/>
+  </linearGradient>
+</defs>
+
+<!-- H -->
+<text x="0" y="184"
+      fill="url(#white)"
+      font-family="Montserrat,Arial,sans-serif"
+      font-size="180"
+      font-weight="500">H</text>
+
+<!-- O centered in the 160–350 zone -->
+<g transform="translate(162 0)">
+  <path d="M0 154 A96 96 0 0 1 192 154"
+        fill="none"
+        stroke="url(#gold)"
+        stroke-width="30"
+        stroke-linecap="butt"/>
+  <path d="M-12 193 Q96 154 204 193 Q96 176 -12 193Z"
+        fill="url(#white)"/>
+</g>
+
+<!-- RIZON -->
+<text x="382" y="184"
+      fill="url(#white)"
+      font-family="Montserrat,Arial,sans-serif"
+      font-size="180"
+      font-weight="500"
+      letter-spacing="19">RIZON</text>
+</svg>
