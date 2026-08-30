@@ -462,3 +462,19 @@ body.sound-is-playing .hero-glow-two{animation:ambientDriftTwo 22s ease-in-out i
     border-radius:20px;
   }
 }
+/* Phrase de crédibilité - Fondateur */
+.founder-proof{
+  width:100%;
+  max-width:1100px;
+  margin:32px auto 24px;
+  padding:0 24px;
+  text-align:center;
+  box-sizing:border-box;
+}
+
+.founder-proof strong{
+  display:block;
+  font-size:1.05rem;
+  line-height:1.5;
+  color:#a06f16;
+}
