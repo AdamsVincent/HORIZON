@@ -337,3 +337,39 @@ body.sound-is-playing .hero-glow-two{animation:ambientDriftTwo 22s ease-in-out i
     width:100%;
   }
 }
+/* Bloc Collectif avec image */
+.collective-with-image{
+  display:grid;
+  grid-template-columns:minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap:48px;
+  align-items:center;
+}
+
+.collective-copy{
+  min-width:0;
+}
+
+.collective-visual{
+  width:100%;
+}
+
+.collective-visual img{
+  display:block;
+  width:100%;
+  height:auto;
+  border-radius:24px;
+  object-fit:cover;
+  box-shadow:0 24px 60px rgba(0,0,0,.28);
+}
+
+/* Mobile */
+@media (max-width: 850px){
+  .collective-with-image{
+    grid-template-columns:1fr;
+    gap:28px;
+  }
+
+  .collective-visual img{
+    border-radius:18px;
+  }
+}
